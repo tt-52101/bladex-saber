@@ -35,7 +35,7 @@
   import userLogin from "./userlogin";
   import codeLogin from "./codelogin";
   import thirdLogin from "./thirdlogin";
-  import {mapGetters} from "vuex";
+  import { mapGetters } from "vuex";
   import {dateFormat} from "@/util/date";
   import {validatenull} from "@/util/validate";
   import topLang from "@/page/index/top/top-lang";
