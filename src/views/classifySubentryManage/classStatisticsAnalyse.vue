@@ -27,34 +27,14 @@
 
             <el-col :span="4">
               <el-button-group>
-                <el-button>区间</el-button>
                 <el-button>单个</el-button>
+                <el-button>区间</el-button>
               </el-button-group>
             </el-col>
 
             <el-col :span="5">
               <el-date-picker v-model="value3" type="year" placeholder="选择年">
               </el-date-picker>
-            </el-col>
-            <el-col :span="3" push="1">
-              <el-select v-model="value" placeholder="总消耗">
-                <el-option
-                  v-for="item in options"
-                  :key="item.value"
-                  :label="item.label"
-                  :value="item.value"
-                >
-                </el-option>
-              </el-select>
-            </el-col>
-
-            <el-col :span="3" push="2">
-              <el-input
-                placeholder="请选择分项"
-                v-model="input"
-                :disabled="true"
-              >
-              </el-input>
             </el-col>
           </el-row>
         </el-col>
@@ -71,13 +51,21 @@
               </el-button-group>
             </el-col>
 
-            <el-col :span="8">
+            <!-- <el-col :span="8">
               <el-button icon="el-icon-tickets" plain>能耗报表</el-button>
-            </el-col>
+            </el-col> -->
           </el-row>
         </el-col>
       </el-row>
-      <Contrast></Contrast>
+      <Contrast contrastType="area">
+        <template>
+           <el-button-group>
+                <el-button>总 </el-button>
+                <el-button >人均</el-button>
+                <el-button >单位建筑面积</el-button>
+              </el-button-group>
+        </template>
+      </Contrast>
     </el-row>
   </div>
 </template>

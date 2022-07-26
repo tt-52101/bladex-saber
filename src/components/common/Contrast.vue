@@ -7,7 +7,7 @@
       style="text-align: center"
     >
       <el-col :span="10">
-        <el-button-group>
+        <el-button-group  v-if="ctime == '1'">
           <el-button
             @click="
               () => {
@@ -31,6 +31,7 @@
             ">日</el-button>
         </el-button-group>
         <el-date-picker
+          v-if="ctime == '1'"
           style="margin: 8px 20px"
           v-model="leftDate"
           
@@ -53,6 +54,7 @@
       </el-col>
       <el-col :span="10">
         <el-date-picker
+          v-if="ctime == '1'"
           style="margin: 8px 20px"
           v-model="rightDate"
           :type="dateTyep"
@@ -130,10 +132,14 @@ export default {
       datePlaceholder:'年',
     };
   },
-  porps: {
+  props: {
     contrastType: {
       type: String,
       default: "area", //date
+    },
+    ctime: {
+      type: String,
+      default: "1", //date
     },
     progressList: {
       type: Array,

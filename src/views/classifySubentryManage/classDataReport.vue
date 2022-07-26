@@ -6,11 +6,36 @@
       style="border-bottom: 1px solid rgba(233, 233, 233, 1)"
     >
       <el-col :span="18">
-        <el-row :gutter="24">
-          <el-col :offset="2" :span="6"
-            ><el-input v-model="input" placeholder="请输入内容"></el-input
-          ></el-col>
+        <el-row  style='width:65%;align-items: flex-start' :gutter="30">
+          <el-col :span="8">
+            <el-button-group>
+              <el-button >年</el-button>
+              <el-button >月</el-button>
+              <el-button >日</el-button>
+            </el-button-group></el-col
+          >
+
           <el-col :span="6">
+            <el-button-group>
+              <el-button >区间</el-button>
+              <el-button >单个</el-button>
+            </el-button-group>
+          </el-col>
+
+          <el-col :span="10">
+            <el-date-picker
+              style="width: 170px"
+              
+              v-model="value3"
+              type="year"
+              placeholder="选择年"
+            >
+            </el-date-picker>
+          </el-col>
+          <!-- <el-col :offset="2" :span="6"
+            ><el-input v-model="input" placeholder="请输入内容"></el-input
+          ></el-col> -->
+          <!-- <el-col :span="6">
             <el-select v-model="value" placeholder="电表">
               <el-option
                 v-for="item in options"
@@ -31,14 +56,22 @@
               >
               </el-option>
             </el-select>
-          </el-col>
+          </el-col> -->
         </el-row>
       </el-col>
 
-      <el-col :span="6" :offset="12">
-        <el-button>查看</el-button>
-        <el-button>导入</el-button>
-      </el-col>
+      <el-row  type=flex  justify="end" style='width:30%;'>
+        <el-col :span="13">
+          <el-button-group>
+            <el-button icon="el-icon-s-operation">看能耗</el-button>
+            <el-button icon="el-icon-date">看成本</el-button>
+          </el-button-group>
+        </el-col>
+        <el-col :span="6">
+          <!-- <el-button>查看</el-button> -->
+          <el-button>导出</el-button>
+        </el-col>
+      </el-row>
     </el-row>
 
     <avue-crud
