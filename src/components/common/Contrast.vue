@@ -7,7 +7,11 @@
       style="text-align: center"
     >
       <el-col :span="10">
+<<<<<<< HEAD
         <el-button-group>
+=======
+        <el-button-group  v-if="ctime == '1'">
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
           <el-button
             @click="
               () => {
@@ -31,6 +35,10 @@
             ">日</el-button>
         </el-button-group>
         <el-date-picker
+<<<<<<< HEAD
+=======
+          v-if="ctime == '1'"
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
           style="margin: 8px 20px"
           v-model="leftDate"
           
@@ -53,6 +61,10 @@
       </el-col>
       <el-col :span="10">
         <el-date-picker
+<<<<<<< HEAD
+=======
+          v-if="ctime == '1'"
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
           style="margin: 8px 20px"
           v-model="rightDate"
           :type="dateTyep"
@@ -130,11 +142,22 @@ export default {
       datePlaceholder:'年',
     };
   },
+<<<<<<< HEAD
   porps: {
+=======
+  props: {
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
     contrastType: {
       type: String,
       default: "area", //date
     },
+<<<<<<< HEAD
+=======
+    ctime: {
+      type: String,
+      default: "1", //date
+    },
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
     progressList: {
       type: Array,
       default: function () {

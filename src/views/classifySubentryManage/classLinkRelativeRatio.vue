@@ -63,7 +63,10 @@
         <el-main> 
 
           <Contrast contrastType='date' @getOptions='getOptions'>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
             <template>
 
                <el-button-group>

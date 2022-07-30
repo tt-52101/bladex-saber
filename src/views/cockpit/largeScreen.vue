@@ -12,11 +12,15 @@
             style="padding: 18px 10px 0 10px"
           >
             <el-col :span="6"><div class="title-font">定额管理</div></el-col>
+<<<<<<< HEAD
             <el-col :span="2"
               ><div class="more" @click="clickDialogVisible('定额管理')">
                 更多
               </div></el-col
             >
+=======
+            <el-col :span="2"><div class="more">更多</div></el-col>
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
           </el-row>
           <el-divider></el-divider>
           <table border="1" class="table">
@@ -105,23 +109,39 @@
           <el-divider></el-divider>
 
           <el-row
+<<<<<<< HEAD
         type="flex"  justify="space-around"
         style="flex-wrap: wrap;"
          
           >
             <el-col :span="10">
+=======
+            type="flex"
+            class="row-bg"
+            justify="start"
+            style="padding: 0 32px; flex-wrap: wrap"
+          >
+            <el-col :span="12">
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
               <el-row
                 type="flex"
                 class="row-bg"
                 justify="space-between"
+<<<<<<< HEAD
                 :gutter="10"
               >
                 <el-col :span="5" class="icon1">
+=======
+                :gutter="20"
+              >
+                <el-col :span="8" class="icon1">
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                   <i
                     class="iconfont el-icon-tongjiyuce"
                     style="font-size: 38px"
                   ></i>
                 </el-col>
+<<<<<<< HEAD
                 <el-col :span="19">
                   <el-col :span="24"> 碳达峰峰值预测</el-col>
                   <el-col :span="24"> <i style="color: #000000;font-size: 22px;">{{DualCarbonData.maxCarbon}}</i> 吨 </el-col>
@@ -134,10 +154,25 @@
               <el-col :span="24" > <i >{{DualCarbonData.neutralization}}%</i> </el-col>
             </el-col>
             <el-col :span="10">
+=======
+                <el-col :span="16">
+                  <el-col :span="24"> 碳达峰峰值预测</el-col>
+                  <el-col :span="24">20吨 </el-col>
+                </el-col>
+              </el-row>
+            </el-col>
+            <el-col :span="12">
+              <div class="icon3"></div>
+              <el-col :span="24"> 碳中和指标</el-col>
+              <el-col :span="24"> 90%</el-col>
+            </el-col>
+            <el-col :span="12">
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
               <el-row
                 type="flex"
                 class="row-bg"
                 justify="space-between"
+<<<<<<< HEAD
                 :gutter="10"
               >
                 <el-col :span="6" class="icon2">
@@ -146,14 +181,31 @@
                 <el-col :span="18">
                   <el-col :span="24"> 碳达峰时间预测</el-col>
                   <el-col :span="24">  <i style="color: #000000;font-size: 22px;">{{DualCarbonData.maxCarbonTime}}</i> 年 </el-col>
+=======
+                :gutter="20"
+              >
+                <el-col :span="8" class="icon2">
+                  <i class="iconfont el-icon-yuce" style="font-size: 38px"></i>
+                </el-col>
+                <el-col :span="16">
+                  <el-col :span="24"> 碳达峰峰值预测</el-col>
+                  <el-col :span="24">20吨 </el-col>
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                 </el-col>
               </el-row>
             </el-col>
 
+<<<<<<< HEAD
             <el-col :span="10" style="text-align: center;background-color: rgba(250, 249, 249, 1);">
               <div class="icon4"></div>
               <el-col :span="24"> 碳排放量</el-col>
               <el-col :span="24" > <i >{{DualCarbonData.emission}}吨 </i> </el-col></el-col
+=======
+            <el-col :span="12">
+              <div class="icon4"></div>
+              <el-col :span="24"> 碳排放量</el-col>
+              <el-col :span="24">20吨 </el-col></el-col
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
             >
           </el-row>
         </el-col>
@@ -217,6 +269,7 @@
           </el-row>
           <el-divider></el-divider>
 
+<<<<<<< HEAD
           <el-col :span="8" style="text-align: center; padding-left: 25px">
             <div id="smallPie1" style="width: 90px; height: 90px"></div>
           </el-col>
@@ -228,6 +281,10 @@
           </el-col>
           <el-col :span="24" style="padding: 0">
             <div id="main6" style="width: 460px; height: 120px"></div>
+=======
+          <el-col :span="8" style="text-align: center">
+            <div id="smallPie1" style="width: 90px; height: 90px"></div>
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
           </el-col> </el-col
       ></el-col>
 
@@ -261,7 +318,11 @@
           <div class="min">
             <div style="display: inline-block; width: 100%">
               <el-table
+<<<<<<< HEAD
                 :data="ConsumptionWarningList"
+=======
+                :data="list"
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                 style="width: 100%"
                 class="top"
                 border
@@ -273,7 +334,11 @@
                 }"
               >
                 <el-table-column
+<<<<<<< HEAD
                   prop="dataTime"
+=======
+                  prop="fileName"
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                   label="预警时间"
                   align="center"
                 />
@@ -282,27 +347,49 @@
                   label="预警类型"
                   align="center"
                 />
+<<<<<<< HEAD
                 <el-table-column prop="name" label="预警项" align="center" />
                 <el-table-column
                   prop="childName"
+=======
+                <el-table-column
+                  prop="fileSize"
+                  label="预警项"
+                  align="center"
+                />
+                <el-table-column
+                  prop="uploadMan"
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                   label="预警子项"
                   align="center"
                 />
                 <el-table-column
+<<<<<<< HEAD
                   prop="real"
+=======
+                  prop="visitNum"
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                   label="实际能耗值"
                   align="center"
                 />
               </el-table>
 
               <vue-seamless-scroll
+<<<<<<< HEAD
                 :data="ConsumptionWarningList"
+=======
+                :data="list"
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                 class="seamless-warp"
                 style="width: 100%"
                 :class-option="classOption"
               >
                 <el-table
+<<<<<<< HEAD
                   :data="ConsumptionWarningList"
+=======
+                  :data="list"
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                   style="width: 100%"
                   class="bottom"
                   border
@@ -310,12 +397,18 @@
                   :cell-style="{ padding: '0' }"
                 >
                   <el-table-column
+<<<<<<< HEAD
                     prop="dataTime"
                     label="预警时间"
+=======
+                    prop="fileName"
+                    label="油库名称"
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                     align="center"
                   />
                   <el-table-column
                     prop="uploadDate"
+<<<<<<< HEAD
                     label="预警类型"
                     align="center"
                   />
@@ -328,6 +421,24 @@
                   <el-table-column
                     prop="real"
                     label="实际能耗值 "
+=======
+                    label="油库编号"
+                    align="center"
+                  />
+                  <el-table-column
+                    prop="fileSize"
+                    label="总库存(m3)"
+                    align="center"
+                  />
+                  <el-table-column
+                    prop="uploadMan"
+                    label="安全高度(mm)"
+                    align="center"
+                  />
+                  <el-table-column
+                    prop="visitNum"
+                    label="安全容量(m3)"
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                     align="center"
                   />
                 </el-table>
@@ -351,22 +462,33 @@
 
           <el-table
             class="tableBox"
+<<<<<<< HEAD
             :data="officeEnergyList"
             style="width: 100%"
             :row-style="getRowStyle"
             :cell-style="getCellStyle"
+=======
+            :data="tableData"
+            style="width: 100%"
+            :row-style="{ height: '20px' }"
+            :cell-style="{ padding: '0' }"
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
             :header-cell-style="{
               background: '#0090FF',
               color: '#fff',
               height: '20px',
               padding: '0px',
+<<<<<<< HEAD
               borderRight: ' 1px solid',
+=======
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
             }"
           >
             <el-table-column
               label="序号"
               align="center"
               type="index"
+<<<<<<< HEAD
             ></el-table-column>
             <el-table-column prop="officeName" label="部门"> </el-table-column>
             <el-table-column prop="name" label="姓名"> </el-table-column>
@@ -398,20 +520,38 @@
         </template>
       </chartDialog>
     </div>
+=======
+              width="50"
+            ></el-table-column>
+            <el-table-column prop="date" label="日期"> </el-table-column>
+            <el-table-column prop="name" label="姓名"> </el-table-column>
+            <el-table-column prop="address" label="地址">
+            </el-table-column> </el-table></el-col
+      ></el-col>
+    </el-row>
+    <div style="margin-top: 30px"></div>
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import chartDialog from "@/components/common/chartDialog";
 export default {
   data() {
     return {
       showDialog: false,
       title: "",
+=======
+export default {
+  data() {
+    return {
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
       quotaManageData: {},
       energyConservationData: {},
       efficiencyManageData: {},
       getCostControlData: {},
+<<<<<<< HEAD
       officeEnergyList: [],
       DualCarbonData:{},
       ConsumptionWarningList: [],
@@ -421,6 +561,76 @@ export default {
   components: {
     chartDialog,
   },
+=======
+      tableData: [
+        {
+          date: "2016-05-02",
+          name: "王小虎",
+          address: "上海市普陀区",
+        },
+        {
+          date: "2016-05-04",
+          name: "王小虎",
+          address: "上海市普陀区",
+        },
+        {
+          date: "2016-05-01",
+          name: "王小虎",
+          address: "上海市普陀",
+        },
+        {
+          date: "2016-05-03",
+          name: "王小虎",
+          address: "上海市普陀",
+        },
+      ],
+      list: [
+        {
+          fileName: "123",
+          uploadDate: "2021-11-18",
+          fileSize: "8",
+          uploadMan: "165",
+          visitNum: "112",
+        },
+        {
+          fileName: "123",
+          uploadDate: "2021-11-18",
+          fileSize: "8",
+          uploadMan: "165",
+          visitNum: "112",
+        },
+        {
+          fileName: "123",
+          uploadDate: "2021-11-18",
+          fileSize: "8",
+          uploadMan: "165",
+          visitNum: "112",
+        },
+        {
+          fileName: "123",
+          uploadDate: "2021-11-18",
+          fileSize: "8",
+          uploadMan: "165",
+          visitNum: "112",
+        },
+        {
+          fileName: "123",
+          uploadDate: "2021-11-18",
+          fileSize: "8",
+          uploadMan: "165",
+          visitNum: "112",
+        },
+        {
+          fileName: "123",
+          uploadDate: "2021-11-18",
+          fileSize: "8",
+          uploadMan: "165",
+          visitNum: "112",
+        },
+      ],
+    };
+  },
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
   created() {},
   computed: {
     classOption() {
@@ -439,6 +649,7 @@ export default {
   mounted() {
     this.initData();
   },
+<<<<<<< HEAD
   watch: {
     showDialog(val) {
       if (val) {
@@ -448,17 +659,25 @@ export default {
       }
     },
   },
+=======
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
   methods: {
     initData() {
       this.getQuotaManage();
       this.getEnergyConservation();
       this.efficiencyManage();
+<<<<<<< HEAD
        this.getDualCarbon() 
       this.getCostControl();
       this.getClassifiedEnergy();
       this.getEnergySaving();
       this.getConsumptionWarning();
       this.getOfficeEnergy();
+=======
+      this.getCostControl();
+      this.getClassifiedEnergy();
+        this.getEnergySaving()
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
     },
     //定额管理
     getQuotaManage() {
@@ -508,6 +727,7 @@ export default {
         series: [],
       };
 
+<<<<<<< HEAD
       var option3 = {
         /* title: {
           text: "Stacked Line",
@@ -574,12 +794,15 @@ export default {
         ],
       };
 
+=======
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
       this.$axios.get("/api/vkie/overview/quotaManage").then((response) => {
         this.quotaManageData = response.data.data;
         let { legend, series, xAxisData } = response.data.data.echarts;
         option.legend.data = legend;
         option.series = series;
         option.xAxis[0].data = xAxisData;
+<<<<<<< HEAD
         var myChart1 = this.$echarts.init(document.getElementById("main1"));
         if (this.showDialog) {
           var myChart2 = this.$echarts.init(document.getElementById("left-chart"));
@@ -592,6 +815,11 @@ export default {
         }
 
         myChart1.setOption(option);
+=======
+
+        var myChart = this.$echarts.init(document.getElementById("main1"));
+        myChart.setOption(option);
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
       });
     },
     //节能管理
@@ -686,6 +914,7 @@ export default {
         });
     },
 
+<<<<<<< HEAD
     //双碳管理
     getDualCarbon(){
         this.$axios
@@ -696,6 +925,8 @@ export default {
         });
     },
 
+=======
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
     getCostControl() {
       var option = {
         title: {
@@ -818,6 +1049,7 @@ export default {
     },
     getEnergySaving() {
       var option1 = {
+<<<<<<< HEAD
         title: {
           show: true,
           top: 20,
@@ -842,10 +1074,13 @@ export default {
             fontSize: 12,
           },
         },
+=======
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
         tooltip: {
           trigger: "item",
         },
         legend: {
+<<<<<<< HEAD
           show: false,
         },
         /*   grid:{
@@ -862,22 +1097,42 @@ export default {
             radius: ["70%", "100%"],
             avoidLabelOverlap: false,
 
+=======
+        /*   top: "5%",
+          left: "center", */
+        },
+        series: [
+          {
+            name: "Access From",
+            type: "pie",
+            radius: ["40%", "70%"],
+            avoidLabelOverlap: false,
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
             label: {
               show: false,
               position: "center",
             },
             emphasis: {
               label: {
+<<<<<<< HEAD
                 show: false,
                 fontSize: "40",
                 fontWeight: "bold",
                 showLegendSymbol: false,
+=======
+                show: fal,
+                fontSize: "40",
+                fontWeight: "bold",
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
               },
             },
             labelLine: {
               show: false,
             },
+<<<<<<< HEAD
 
+=======
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
             data: [
               { value: 1048, name: "Search Engine" },
               { value: 735, name: "Direct" },
@@ -889,6 +1144,7 @@ export default {
         ],
       };
 
+<<<<<<< HEAD
       var option2 = {
         tooltip: {
           trigger: "axis",
@@ -1015,16 +1271,25 @@ export default {
       this.title = title;
       
         this.$forceUpdate()
+=======
+
+          var myChart = this.$echarts.init(document.getElementById("smallPie1"));
+
+        myChart.setOption(option1);
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
     },
   },
 };
 </script>
 
 <style lang="scss" scoped>
+<<<<<<< HEAD
 ::v-deep .el-table .warning-row {
   color: #ec5656;
 }
 
+=======
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
 ::v-deep .cell {
   line-height: 30px !important;
   overflow: auto !important;
@@ -1148,6 +1413,7 @@ export default {
   font-size: 22px;
   color: #f63c3e;
 }
+<<<<<<< HEAD
 .dialog-chart-title {
   font-weight: 400;
   font-style: normal;
@@ -1162,4 +1428,6 @@ export default {
     right: 18px;
   }
 }
+=======
+>>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
 </style>
