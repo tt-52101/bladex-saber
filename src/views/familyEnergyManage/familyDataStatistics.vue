@@ -10,6 +10,7 @@
             </div>
 
             <el-tree
+            style="width: 197px"
               :data="menu"
               :props="defaultProps"
               @node-click="handleNodeClick"

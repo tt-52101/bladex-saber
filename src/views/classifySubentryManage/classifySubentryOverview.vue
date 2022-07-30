@@ -36,11 +36,7 @@
         class="second"
         @click="tabsChange(2)"
       >
-<<<<<<< HEAD
-        <div>人均能耗</div>
-=======
         <div>总成本</div>
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
         <div
           :style="{
             color:
@@ -48,11 +44,7 @@
           }"
           class="weight"
         >
-<<<<<<< HEAD
-          0.23(吨标煤/人)
-=======
           0.23(万元)
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
         </div>
         <div><span>与同期相比</span><span>+45%</span></div>
         <span
@@ -77,8 +69,6 @@
   /cockpit/largeScreen
   -->
     </div>
-<<<<<<< HEAD
-=======
     <div class="charts">
       <el-row class="charts-title" type="flex" justify="space-between">
         <el-col :style="{ color: this.$store.state.common.colorName }"
@@ -97,7 +87,6 @@
         </el-col>
       </el-row>
     </div>
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
   </div>
 </template>
 
@@ -106,8 +95,6 @@ export default {
     data(){
         return{ isActive: 1,}
     },
-<<<<<<< HEAD
-=======
     mounted() {
       var myChart = this.$echarts.init(document.getElementById("main"));
       var myChart2 = this.$echarts.init(document.getElementById("main2"));
@@ -286,7 +273,6 @@ export default {
       myChart.setOption(option1);
       myChart2.setOption(option2);
     },
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
     methods:{
        tabsChange(e) {
       this.isActive = e;
@@ -299,8 +285,6 @@ export default {
 <style lang="scss" scoped>
 .classifySubentryOverview{
  
-<<<<<<< HEAD
-=======
 .charts {
   padding: 15px 35px;
   .charts-title {
@@ -311,7 +295,6 @@ export default {
     color: #666666;
   }
 }
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
 .tabs {
   display: flex;
   padding: 15px 35px;

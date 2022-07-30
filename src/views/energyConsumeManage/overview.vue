@@ -4,7 +4,6 @@
       <el-col :span="6" style="padding: 0px" class="item"
         ><div class="title">能耗趋势</div>
         <el-button-group style="margin-left: 20px">
-<<<<<<< HEAD
           <el-button
             @click="
               () => {
@@ -187,67 +186,12 @@
           </el-table-column>
           <el-table-column prop="proportion" label="占比(%)"> </el-table-column>
         </el-table>
-=======
-          <el-button>年</el-button>
-          <el-button>月</el-button>
-          <el-button>日</el-button>
-        </el-button-group></el-col
-      >
-      <el-col :span="11" style="margin: 0 10px; height: 272px" class="item"
-        ><div class="title">本年度能耗概览</div>
-        <el-row style="padding: 5px 20px">
-          <el-col :span="10"><div class="item1">用能成本趋势</div></el-col>
-          <el-col :span="14"
-            ><div class="item1" style="margin-left: 40px">
-              用能成本趋势
-            </div></el-col
-          >
-          <el-col :span="10"><div class="item1">用能成本趋势</div></el-col>
-          <el-col :span="14"
-            ><div class="item1" style="margin-left: 40px">
-              用能成本趋势
-            </div></el-col
-          >
-        </el-row>
-      </el-col>
-      <el-col :span="6" class="item" 
-        ><div class="title">用能成本趋势</div>
-        <el-button-group style="margin-left: 20px">
-          <el-button>年</el-button>
-          <el-button>月</el-button>
-          <el-button>日</el-button>
-        </el-button-group></el-col
-      >
-      <el-col :span="6" class="item" style="margin-top: 18px;"
-        ><div class="title">分类分项能耗占比</div>
-        <el-button-group style="margin-left: 20px">
-          <el-button>年</el-button>
-          <el-button>月</el-button>
-          <el-button>日</el-button>
-        </el-button-group>
-      </el-col>
-      <el-col :span="11" class="item" style="margin: 0 10px; height: 487px;    margin-top: -90px;"
-        ><div class="title">本年度区域能耗情况</div>
-        <div>
-           <el-image :src="src"></el-image>
-        </div>
-      </el-col>
-
-      <el-col :span="6" class="item" style="margin-top: 18px;"
-        ><div class="title">分户能耗</div>
-        <el-button-group style="margin-left: 20px">
-          <el-button>年</el-button>
-          <el-button>月</el-button>
-          <el-button>日</el-button>
-        </el-button-group>
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
       </el-col>
     </el-row>
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
 import img from "@/img/u2556.png";
 export default {
   data() {
@@ -409,18 +353,6 @@ export default {
   },
 };
 </script>  
-=======
-import img from "@/img/u2556.png"
-export default {
-data(){
-    return{
-      src:img
-    }
-}
-
-};
-</script>
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
 
 <style lang="scss" scoped>
 .overview {
@@ -454,7 +386,6 @@ data(){
   }
   .item1 {
     // width: 281px;
-<<<<<<< HEAD
     color: #999999;
     text-align: center;
     font-size: 14px;
@@ -469,12 +400,6 @@ data(){
   }
   .fontWeight {
     font-size: 24px;
-=======
-    height: 91px;
-    text-align: center;
-    border: 1px solid #999999;
-    border-bottom: 3px solid #2c95e0;
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
   }
 }
 </style>

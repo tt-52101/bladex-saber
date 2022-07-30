@@ -35,13 +35,8 @@
 
                 <el-col :span="4">
                   <el-button-group>
-<<<<<<< HEAD
-                    <el-button >区间</el-button>
-                    <el-button >单个</el-button>
-=======
                     <el-button >单个</el-button>
                     <el-button >区间</el-button>
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                   </el-button-group>
                 </el-col>
 
@@ -74,15 +69,9 @@
                   </el-button-group>
                 </el-col>
 
-<<<<<<< HEAD
-                <el-col :span="8">
-                  <el-button icon="el-icon-tickets"  plain>能耗报表</el-button>
-                </el-col>
-=======
                 <!-- <el-col :span="8">
                   <el-button icon="el-icon-tickets"  plain>能耗报表</el-button>
                 </el-col> -->
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
               </el-row>
             </el-col>
           </el-row>
@@ -199,16 +188,6 @@
           <div class="charts">
             <el-row class="charts-title" type="flex" justify="space-between">
               <el-col :style="{ color: this.$store.state.common.colorName }"
-<<<<<<< HEAD
-                >单位建筑面积能耗占比情况(吨标煤/㎡)</el-col
-              >
-              <el-col :style="{ color: this.$store.state.common.colorName }">
-                单位建筑面积能耗趋势(吨标煤/㎡)f</el-col
-              >
-            </el-row>
-            <el-row class="charts-title" type="flex" justify="space-between"
-              >
-=======
                 >能耗对标情况(吨标煤)</el-col
               >
             </el-row>
@@ -216,7 +195,6 @@
               ><el-col>
                 <div id="main" style="width: 100%; height: 446px"></div>
               </el-col>
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
             </el-row>
           </div>
         </el-main>
@@ -315,9 +293,6 @@ export default {
   },
   created() {},
   mounted() {
-<<<<<<< HEAD
-  
-=======
     var myChart = this.$echarts.init(document.getElementById("main"));
     var option1 = {
       tooltip: {
@@ -452,7 +427,6 @@ export default {
       ],
     };
     myChart.setOption(option1);
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
   },
   computed: {},
   methods: {

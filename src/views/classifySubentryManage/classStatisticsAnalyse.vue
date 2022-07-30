@@ -27,13 +27,8 @@
 
             <el-col :span="4">
               <el-button-group>
-<<<<<<< HEAD
-                <el-button>区间</el-button>
-                <el-button>单个</el-button>
-=======
                 <el-button>单个</el-button>
                 <el-button>区间</el-button>
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
               </el-button-group>
             </el-col>
 
@@ -41,29 +36,6 @@
               <el-date-picker v-model="value3" type="year" placeholder="选择年">
               </el-date-picker>
             </el-col>
-<<<<<<< HEAD
-            <el-col :span="3" push="1">
-              <el-select v-model="value" placeholder="总消耗">
-                <el-option
-                  v-for="item in options"
-                  :key="item.value"
-                  :label="item.label"
-                  :value="item.value"
-                >
-                </el-option>
-              </el-select>
-            </el-col>
-
-            <el-col :span="3" push="2">
-              <el-input
-                placeholder="请选择分项"
-                v-model="input"
-                :disabled="true"
-              >
-              </el-input>
-            </el-col>
-=======
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
           </el-row>
         </el-col>
         <el-col :span="6">
@@ -79,15 +51,6 @@
               </el-button-group>
             </el-col>
 
-<<<<<<< HEAD
-            <el-col :span="8">
-              <el-button icon="el-icon-tickets" plain>能耗报表</el-button>
-            </el-col>
-          </el-row>
-        </el-col>
-      </el-row>
-      <Contrast></Contrast>
-=======
             <!-- <el-col :span="8">
               <el-button icon="el-icon-tickets" plain>能耗报表</el-button>
             </el-col> -->
@@ -103,7 +66,6 @@
               </el-button-group>
         </template>
       </Contrast>
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
     </el-row>
   </div>
 </template>

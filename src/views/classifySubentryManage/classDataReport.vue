@@ -6,13 +6,6 @@
       style="border-bottom: 1px solid rgba(233, 233, 233, 1)"
     >
       <el-col :span="18">
-<<<<<<< HEAD
-        <el-row :gutter="24">
-          <el-col :offset="2" :span="6"
-            ><el-input v-model="input" placeholder="请输入内容"></el-input
-          ></el-col>
-          <el-col :span="6">
-=======
         <el-row  style='width:65%;align-items: flex-start' :gutter="30">
           <el-col :span="8">
             <el-button-group>
@@ -43,7 +36,6 @@
             ><el-input v-model="input" placeholder="请输入内容"></el-input
           ></el-col> -->
           <!-- <el-col :span="6">
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
             <el-select v-model="value" placeholder="电表">
               <el-option
                 v-for="item in options"
@@ -64,16 +56,6 @@
               >
               </el-option>
             </el-select>
-<<<<<<< HEAD
-          </el-col>
-        </el-row>
-      </el-col>
-
-      <el-col :span="6" :offset="12">
-        <el-button>查看</el-button>
-        <el-button>导入</el-button>
-      </el-col>
-=======
           </el-col> -->
         </el-row>
       </el-col>
@@ -90,7 +72,6 @@
           <el-button>导出</el-button>
         </el-col>
       </el-row>
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
     </el-row>
 
     <avue-crud

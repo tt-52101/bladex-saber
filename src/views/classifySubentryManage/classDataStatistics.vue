@@ -35,13 +35,8 @@
 
                 <el-col :span="4">
                   <el-button-group>
-<<<<<<< HEAD
-                    <el-button >区间</el-button>
-                    <el-button >单个</el-button>
-=======
                     <el-button >单个</el-button>
                     <el-button >区间</el-button>
->>>>>>> d6dad16b149a766e99a96ed2b53714eaa942d6ca
                   </el-button-group>
                 </el-col>
 

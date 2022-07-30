@@ -24,6 +24,7 @@ import website from '@/config/website';
 import crudCommon from '@/mixins/crud';
 import scroll from 'vue-seamless-scroll'
 import moment from "moment"
+import outToExcels from '@/util/outToExcel'
 
 
 
@@ -34,6 +35,7 @@ import  './asssets/font/iconfont.css'
 
 Vue.prototype.$moment = moment
 Vue.prototype.$axios = axios
+Vue.prototype.$outToExcels = outToExcels
 /* axios.defaults.baseURL="http://192.168.16.204:18089/bladex"; */
 axios.defaults.baseURL=" ";
 
